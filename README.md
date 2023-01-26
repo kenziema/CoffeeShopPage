@@ -1,5 +1,7 @@
 # CoffeeShopPage
 
+This is a final project for Human and Computer Interaction Course
+
 ## Homepage
 
 ![homepage](https://user-images.githubusercontent.com/71596249/214859180-2d194573-fff2-4111-b843-13d2e98b3c11.gif)
