@@ -1,6 +1,6 @@
 # CoffeeShopPage
 
-This is a final project for Human and Computer Interaction Course
+This is a final project for Human and Computer Interaction Course back in 2021 (2nd Semester)
 
 ## Homepage
 
