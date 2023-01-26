@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <script src="./payment.js" defer></script>
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" name="" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="./homepage.html">Home</a></li>
+                        <li><a href="./beverages.html">Beverages</a></li>
+                        <li><a href="./deserts.html">Dessert</a></li>
+                        <li><a href="./form.html">Contact</a></li>
+                        <li><a href="./payment.html">Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navtop">
+        <img class="logo-nav" src="Caffeine Line.png" alt="">
+        <div class="navbar">
+            Caffeine Line
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <div class="container">
+            <div class="title">Payment</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" name="form-name" id="form-name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="form-email" id="form-email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City</span>   
+                        <input type="text" name="form-city" id="form-city" placeholder="Enter Your City">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <textarea name="form-address" id="form-address" cols="30" rows="10" placeholder="Enter Your Address"></textarea>
+                    </div>
+
+                    <div>
+                        <span class="details">Payment Method</span>
+                        <div class="input-box">
+                            <select name="pay_method" id="pay_method" class="pay-method" onchange="displayPayment()">
+                                <option value="" >===Choose====</option>
+                                <option value="paypal">Paypal</option>
+                                <option value="visa" >Visa</option>
+                            </select>
+                        </div>
+
+                        <div id="paypal_pay" class="payment-paypal"></div>
+
+                        <div id="visa_pay" class="payment-visa" style="display: none;">
+                            <div class="visa-info">
+                                <span class="card-details">Card Number</span>
+                                <input type="text" name="form-Cardnumber" id="form-Cardnumber" placeholder="1234-5678-8765-4321">
+                            </div>
+                            <div class="visa-info">
+                                <span class="card-details">Validity (MM/YY)</span>
+                                <input type="month" name="form-date" id="form-date" value="2021-06"> 
+                            </div>
+                            <div class="visa-info">
+                                <span class="card-details">CVV</span>
+                                <input type="text" name="form-cvv" id="form-cvv" maxlength="3" placeholder="123">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div><input type="checkbox" name="form_agree" id="form_agree"> I Agree with the terms and contiion</div>
+                <div style="color: red;" id="error"></div>
+                <div class="btn" >
+                    <input type="button" value="Done" onclick="fnValidate()" >
+                </div>
+            </form>
+    </div>
+ 
+        
+</body>
+</html>
